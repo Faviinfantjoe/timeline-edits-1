@@ -16,13 +16,28 @@ body{
     filter: drop-shadow(0 0 5px rgba(72, 147, 216, 0.955));
 }
 #top h1{
-    margin-right: 200px;
+    margin-right: 100px;
 }
 #top a{
     color: skyblue;
     text-decoration: none   ;
 
 }
+#top button{
+    gap: 0px;
+    background-color: #30bced;
+    color: white;   
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: #00aeff;
+   
+     
+}
+
 #main{
     display: flex; 
     flex-direction: left;  
