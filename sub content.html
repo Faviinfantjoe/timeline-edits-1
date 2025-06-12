@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edits Pricing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+   body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #00aaff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00aaff;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00ccff;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.subheading {
+  font-size: 1.8em;
+  color: #00ccff;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1em;
+  color: #cceeff;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #00aaff;
+  padding: 10px;
+  text-align: center;
+  color: #cceeff;
+}
+
+.pricing-table th {
+  background-color: #003355;
+  color: #00ccff;
+}
+
+.pricing-table td {
+  background-color: #112233;
+}
+
+.glow-on-hover {
+  display: inline-block;
+  background-color: #00aaff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  background-color: #0088cc;
+}
+</style>
+<body>
+  <div class="container">
+    <h1 class="main-heading">Basic Plan</h1>
+
+    <div class="section">
+      <h2 class="subheading">Instagram Edits</h2>
+      <p class="price">Single Video - ₹300</p>
+      <p class="description">
+        Get a professionally edited Instagram video. Includes basic transitions,
+        color correction, and music sync.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="subheading">YouTube Edits</h2>
+      <p class="price">Single Video - ₹500</p>
+      <p class="description">
+        High-quality YouTube video edits with intros, outros, effects, and
+        professional sound design.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="subheading">Premium YouTube Plan</h2>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Per Video</th>
+            <th>Total Cost</th>
+            <th>Videos Included</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monthly</td>
+            <td>₹450</td>
+            <td>₹5400</td>
+            <td>12 Videos</td>
+          </tr>
+          <tr>
+            <td>Weekly</td>
+            <td>₹450</td>
+            <td>₹1800</td>
+            <td>4 Videos</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="index.html"><button class="glow-on-hover">payment 💲</button></a>
+    </div>
+  </div>
+</body>
+</html>
