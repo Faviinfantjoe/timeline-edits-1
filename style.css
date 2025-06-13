@@ -573,3 +573,88 @@ font-family:  "Noto Serif", serif;
         text-align: center;
     }
 }
+@media only screen and (max-width: 768px) {
+    #top {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #top h1 {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #top a, #top h3 {
+        margin: 5px 10px;
+        font-size: 18px;
+    }
+
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content1,
+    #content11,
+    #member,
+    #weekly {
+        margin: 20px 5%;
+        padding: 20px;
+        width: 90%;
+    }
+
+    #content1 img,
+    #content11 img,
+    #member img,
+    #weekly img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .glow-on-hover {
+        margin: 20px auto;
+        width: 90%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #payment {
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #payment img {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #payment p,
+    #payment h3 {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #qr {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #qr h3, #qr h2 {
+        text-align: center;
+    }
+
+    #about h1, #about h3 {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    #pay {
+        flex-direction: column;
+        align-items: center;
+    }
+}
