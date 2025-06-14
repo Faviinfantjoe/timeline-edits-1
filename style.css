@@ -26,7 +26,7 @@ body{
 }
 #top{
     position: relative;
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -349,12 +349,7 @@ font-family:  "Noto Serif", serif;
     margin-left: 5px;
     color:skyblue;
 }
-#about h1{
-    text-align: center;
-}
-#about h3{
- margin-left: 30%;
-}
+
 #qr h2{
     color: skyblue;
 }
@@ -575,11 +570,9 @@ font-family:  "Noto Serif", serif;
        margin-left: 150px;
        margin-top: 100px;
     }
-    #about{
-        margin-left: %;
-    }
+    
    #about h3{
         margin-left: 50px;
         
     }
-    
+}
