@@ -8,34 +8,45 @@
 body{
      background: black
 }
+#top h1{
+    position: absolute;
+    top: 20px;
+    display: inline;
+    margin-left: 40%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
 
 #top img{
+   
     display: inline;
     border-radius: 20px 20px 20px 20px;
     margin: 10px;
     filter: drop-shadow(0 0 5px rgba(72, 147, 216, 0.955));
 }
-#top h1{
-    margin-right: 100px;
+#top{
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(8, 7, 7);
+    filter: drop-shadow(0 0 5px rgba(47, 139, 214, 0.955));
 }
-#top a{
-    color: skyblue;
-    text-decoration: none   ;
 
-}
 #top button{
-    gap: 0px;
-    background-color: #30bced;
-    color: white;   
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(47, 139, 214);
+    color: white;
     border: none;
-    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    background-color: #00aeff;
-   
-     
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
 #main{
@@ -60,7 +71,7 @@ body{
 }
 #content1 h2 {
     text-align: center;
-    font-family:  "WDXL Lubrifont TC", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     margin-top: 10px;
     color: rgb(250, 242, 242);
@@ -84,7 +95,7 @@ body{
 }        
 #content11 h2{
     text-align: center;
-    font-family:  "WDXL Lubrifont TC", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     margin-top: 10px;
     color: rgb(236, 241, 241);
@@ -347,29 +358,8 @@ font-family:  "Noto Serif", serif;
 #qr h2{
     color: skyblue;
 }
-#top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(8, 7, 7);
-    filter: drop-shadow(0 0 5px rgba(47, 139, 214, 0.955));
-}
-#top h1 {
-    font-family: "WDXL Lubrifont TC", sans-serif;
-    font-size: 30px;
-    color: rgb(236, 241, 241);
-    margin-left: 500px;
-}
-#top a {
-    font-size: 20px;
-    margin-right: 250px;
-    margin-top: 10px;
-}
-#top h3{
-    margin-right: 40px;
-}
+
+
 #top:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -501,26 +491,39 @@ font-family:  "Noto Serif", serif;
         flex-direction: column;
         align-items: center;
         padding: 5px;
+        
     }
-
+ 
     #top h1 {
+        margin-top: 10px;
         font-size: 20px;
-        margin-left: 0;
+        margin-left: 50px;
         text-align: center;
     }
-
-    #top a, #top h3 {
-        margin: 5px 0;
+    #main #content1 {
+        margin-left: 40px;
+        margin-top: 150px;
+        padding: 60px;
+    }
+   #main #content11 {
+        padding: 50px ;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+   #content1 h4{
+    margin-left: 5px;
+   } 
+   #content11 h4{
+        margin-left: 5px;
+        margin-top: 20px;
+   }
+   #button1{
+        margin-left: 200px;
+        margin-top: 10px;
+        width: 80%;
+        height: 50px;
         font-size: 16px;
     }
-
-    #main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #content1,
-    #content11,
     #member,
     #weekly {
         margin-left: 5%;
@@ -562,99 +565,23 @@ font-family:  "Noto Serif", serif;
     #payment h3 {
         margin-left: 0;
     }
-
+    #pay{
+        margin-left: 50px;
+    }
+    #button11{
+        margin-bottom: 50px;
+    }
     #qr {
-        margin: 30px auto;
-        text-align: center;
+       margin-left: 150px;
+       margin-top: 100px;
     }
-
-    #about h3 {
-        margin-left: 0;
-        text-align: center;
+    #about{
+        margin-left: %;
     }
-}
-@media only screen and (max-width: 768px) {
-    #top {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+   #about h3{
+        margin-left: 50px;
+        
     }
-
-    #top h1 {
-        font-size: 24px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    #top a, #top h3 {
-        margin: 5px 10px;
-        font-size: 18px;
-    }
-
-    #main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #content1,
-    #content11,
-    #member,
-    #weekly {
-        margin: 20px 5%;
-        padding: 20px;
-        width: 90%;
-    }
-
-    #content1 img,
-    #content11 img,
-    #member img,
-    #weekly img {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
-    .glow-on-hover {
-        margin: 20px auto;
-        width: 90%;
-        height: 45px;
-        font-size: 16px;
-    }
-
-    #payment {
-        margin: 20px auto;
-        padding: 10px;
-        text-align: center;
-    }
-
-    #payment img {
-        width: 80%;
-        height: auto;
-        margin-left: 0;
-    }
-
-    #payment p,
-    #payment h3 {
-        margin-left: 0;
-        font-size: 16px;
-    }
-
-    #qr {
-        margin: 20px auto;
-        text-align: center;
-    }
-
-    #qr h3, #qr h2 {
-        text-align: center;
-    }
-
-    #about h1, #about h3 {
-        text-align: center;
-        margin: 10px auto;
-    }
-
-    #pay {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+   }
+   
+   

@@ -43,8 +43,9 @@ body {
 }
 
 #head button {
-  background-color: #30bced;
-  color: white;
+  margin-bottom: 10px;
+  background-color: #308eed;
+  color: rgb(5, 2, 2);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
